@@ -1,0 +1,21 @@
+.custom-checkbox .form-check-input {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #b2b7bc;
+  background-color: #e8ebee;
+  border-radius: 2px;
+  transition: background-color 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+
+.custom-checkbox .form-check-input:checked {
+  background-color: #5fb773;
+  border-color: #28a745;
+}
+
+.custom-checkbox .form-check-input:hover {
+  border-color: #007bff;
+}
+.custom-checkbox.form-check-inline {
+  margin-right: 0;
+}

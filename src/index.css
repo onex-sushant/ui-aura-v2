@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+  border: 1px solid #d8d8d8;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #979c9e;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(149, 160, 162);
+}
+.main-wrapper {
+  background-color: #f5f0f0;
+  width: calc(100% - 256px);
+}
+.content-container,
+.tab-list-bar {
+  background-color: #fff;
+  margin: 16px;
+  border-radius: 8px;
+}
+.main-content h2 {
+  color: #2b8888;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.sidebar {
+  min-width: 256px;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link.text-primary {
+  background-color: #e0f7fa;
+}
+
+.app-bar {
+  height: 60px;
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.app-bar h4 {
+  font-weight: 600;
+}
+
+.dropdown-menu {
+  min-width: 180px;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 12px 32px;
+  font-size: 14px;
+}
+
+.dropdown-menu .dropdown-divider {
+  margin: 5px 0;
+}
+.dropdown-menu {
+  min-width: 150px;
+  padding: 12px 0;
+}
+
+.dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-item i {
+  margin-right: 8px;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.role-management .table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  margin-bottom: 0;
+}
+.role-management tbody,
+.role-management td,
+.role-management tfoot,
+.role-management th,
+.role-management thead,
+.role-management tr {
+  border: none;
+}
+.role-management th,
+.role-management td {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.role-management th:not(:first-of-type),
+.role-management td:not(:first-of-type) {
+  text-align: center;
+}
+.role-management th {
+  background-color: #f8f9fa;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 14px;
+  color: #707070;
+}
+
+.role-management th:first-of-type,
+.role-management td:first-of-type {
+  padding: 10px 24px;
+}
+.role-management td {
+  padding: 12px 0;
+  border-top: 1px solid #c1c1c1;
+  border-bottom: 1px solid #c1c1c1;
+}
+.role-management td:first-of-type {
+  border-left: 1px solid #c1c1c1;
+  border-radius: 8px 0 0 8px;
+}
+.role-management td:last-of-type {
+  border-right: 1px solid #c1c1c1;
+  border-radius: 0 8px 8px 0;
+}
+.role-row {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+.role-row:hover {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  z-index: 22;
+}
+.role-cell {
+  padding: 12px;
+  border: none;
+}
+.permissions-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.9rem;
+}
+
+.bi-check-lg {
+  color: green;
+  font-size: 1.2rem;
+}
+.bi-x-lg {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.bi-eye,
+.bi-pencil-square {
+  color: #6c757d;
+}
+.action-option .custom-dropdown-btn {
+  background: none;
+  border: none;
+  color: #6c757d; /* Optional: set color for "..." */
+  font-size: 2rem; /* Adjust size for "..." */
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.action-option .custom-dropdown-btn:hover {
+  color: #000; /* Optional: change color on hover */
+}
+
+.action-option .dropdown-menu {
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.permissions-icons,
+.permission-credits {
+  min-width: 100px;
+  max-width: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.permission-credits {
+  min-height: 48px;
+}
+.permissions-icons {
+  margin-top: 8px;
+}
+.tooltip-menu svg {
+  margin-right: 12px;
+}
+.role-management-container {
+  overflow-x: auto;
+  width: 100%;
+  max-width: calc(100vw - 298px);
+}
+
+.role-management th.sticky-column,
+.role-management td.sticky-column {
+  position: sticky;
+  z-index: 2;
+}
+.role-management th.sticky-column:first-of-type,
+.role-management td.sticky-column:first-of-type {
+  min-width: 160px;
+}
+.role-management th.sticky-column:last-of-type,
+.role-management td.sticky-column:last-of-type {
+  min-width: 116px;
+}
+
+.role-management td.sticky-column:first-of-type {
+  font-weight: 500;
+}
+.role-management th.sticky-column {
+  left: 0;
+}
+
+.role-management td.sticky-column {
+  left: 0;
+  z-index: 1;
+}
+
+.role-management th:last-child.sticky-column,
+.role-management td:last-child.sticky-column {
+  right: 0;
+  left: auto;
+}
+.role-management th.sticky-column:last-of-type,
+.role-management td.sticky-column:last-of-type {
+  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.05);
+}
+button.full-round-btn {
+  background-color: transparent;
+  border-radius: 50%;
+  min-width: 48px;
+  max-width: 48px;
+  height: 48px;
+  padding: 0;
+}
+button.full-round-btn:hover {
+  background-color: transparent;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.custom-role-input {
+  margin-top: -16px;
+}
+.custom-role-input label {
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: -20px;
+  margin-left: 12px;
+  background-color: #fff;
+  padding: 2px;
+  transform: translateY(10px);
+}
+
+.custom-role-label input {
+  width: 100%;
+  max-width: 200px;
+}
+.nav-item .nav-link {
+  font-weight: bold;
+  color: #495057;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  padding: 12px 6px;
+  margin-left: 24px;
+}
+
+.nav-item .nav-link.active {
+  color: #c22b31;
+  border-bottom-color: #c22b31;
+}
+.gray-frame {
+  background-color: #f6f6f6;
+  padding: 16px;
+}
